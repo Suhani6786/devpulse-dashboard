@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPulse | Cloud Infrastructure Telemetry</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#hero" class="brand-logo" aria-label="DevPulse Home Page">
+        <span class="logo-icon">&#9679;</span> DevPulse
+      </a>
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#register" class="nav-link">Calculator</a>
+        <!-- CTA -->
+        <a href="#register" class="btn btn-sm btn-primary">Deploy Free Cluster</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero" class="hero-section">
+        <span class="badge-pill">New: Real-time Telemetry Sync</span>
+        <h1 class="hero-title">Primary Value Proposition</h1>
+        <p class="hero-subtitle">Lead text describing DevPulse's core value to infrastructure teams.</p>
+        <p class="cta-group">
+          <a href="#register" class="btn btn-primary">Deploy Free Cluster</a>
+          <a href="#features" class="btn btn-secondary">Read Documentation</a>
+        </p>
+      </section>
+
+      <!-- Feature section -->
+      <section id="features" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Platform Capabilities</h2>
+          <p class="section-subtitle">Section subtitle describing DevPulse's engineering capabilities.</p>
+        </header>
+        <article class="feature-card">
+          <h3 class="feature-title">Latency Tracking</h3>
+          <p class="feature-desc">Description of the Latency Tracking feature.</p>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-title">Log Aggregation</h3>
+          <p class="feature-desc">Description of the Log Aggregation feature.</p>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-title">Auto-Remediation</h3>
+          <p class="feature-desc">Description of the Auto-Remediation feature.</p>
+        </article>
+      </section>
+
+      <!-- Pricing matrix section -->
+      <section id="pricing" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Compute Tier Comparison</h2>
+          <p class="section-subtitle">Section subtitle describing the available compute tiers.</p>
+        </header>
+        <article class="pricing-card">
+          <h3 class="tier-name">Developer</h3>
+          <p class="tier-desc">Tier description for the Developer plan.</p>
+          <p class="tier-price">
+            <span class="price-val">Free</span>
+          </p>
+          <ul class="tier-features">
+            <li>Up to 10 nodes</li>
+            <li>Standard log retention</li>
+            <li>Community support</li>
+          </ul>
+          <a href="#register" class="btn btn-outline btn-block">Select Plan</a>
+        </article>
+        <article class="pricing-card featured">
+          <strong class="popular-tag">Most Popular</strong>
+          <h3 class="tier-name">Pro Cluster</h3>
+          <p class="tier-desc">Tier description for the Pro Cluster plan.</p>
+          <p class="tier-price">
+            <span class="price-val">$99</span>
+            <span class="price-unit">/ month</span>
+          </p>
+          <ul class="tier-features">
+            <li>Up to 200 nodes</li>
+            <li>Extended log retention</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#register" class="btn btn-primary btn-block">Select Plan</a>
+        </article>
+        <article class="pricing-card">
+          <h3 class="tier-name">Enterprise Dedicated</h3>
+          <p class="tier-desc">Tier description for the Enterprise Dedicated plan.</p>
+          <p class="tier-price">
+            <span class="price-val">Custom</span>
+          </p>
+          <ul class="tier-features">
+            <li>Unlimited nodes</li>
+            <li>Custom log retention</li>
+            <li>Dedicated support engineer</li>
+          </ul>
+          <a href="#register" class="btn btn-outline btn-block">Select Plan</a>
+        </article>
+      </section>
+
+      <!-- registration/API sandbox section -->
+      <section id="register" class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Claim API Sandbox Keys</h2>
+          <p class="section-subtitle">Instant provisioning. No credit card required.</p>
+        </header>
+
+        <form action="#" method="post" class="lead-form">
+          <p class="form-group">
+            <label for="email" class="form-label">Work Email <span class="required-mark">*</span></label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="abc@xyz.com" required />
+          </p>
+
+          <p class="form-group">
+            <label for="node-count" class="form-label">Node Count</label>
+            <input type="number" name="node-count" id="node-count" class="form-control" min="1" max="1000" step="1" placeholder="10" />
+            <span class="input-hint">Min: 1 &mdash; Max: 1000</span>
+          </p>
+
+          <p class="form-group">
+            <label for="log-throughput" class="form-label">Log Throughput (events/sec)</label>
+            <input type="number" name="log-throughput" id="log-throughput" class="form-control" min="100" max="1000000" step="100" placeholder="1000" />
+            <span class="input-hint">Min: 100 &mdash; Max: 1,000,000</span>
+          </p>
+
+          <!-- submit button -->
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Generate API Keys</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+      <p class="footer-copy">&copy; 2026 DevPulse Inc. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer Navigation Links">
+        <a href="#hero">Back to Top</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#pricing">Calculator</a>
+      </nav>
+    </footer>
+  </body>
+</html>
