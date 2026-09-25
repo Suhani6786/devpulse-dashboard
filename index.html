@@ -7,142 +7,128 @@
     <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a href="#hero" class="brand-logo" aria-label="DevPulse Home Page">
-        <span class="logo-icon">&#9679;</span> DevPulse
+    <header class="topbar">
+      <a href="#hero" class="brandmark" aria-label="DevPulse Home Page">
+        <span class="brand-dot">&#9679;</span> DevPulse
       </a>
-      <nav class="nav-menu" aria-label="Primary Navigation">
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#register" class="nav-link">Calculator</a>
-        <!-- CTA -->
-        <a href="#register" class="btn btn-sm btn-primary">Deploy Free Cluster</a>
+      <nav class="menu-links" aria-label="Primary Navigation">
+        <a href="#features" class="menu-item">Features</a>
+        <a href="#pricing" class="menu-item">Pricing</a>
+        <a href="#register" class="menu-item">Calculator</a>
+        <a href="#register" class="cta-btn cta-btn--small">Deploy Free Cluster</a>
       </nav>
     </header>
 
     <main>
-      <!-- hero section -->
-      <section id="hero" class="hero-section">
-       <h1 class="hero-title">Real-Time Infrastructure Monitoring</h1>
-<p class="hero-subtitle">
-  Monitor infrastructure performance, logs, and system activity with DevPulse.
-</p>
-      <section id="hero" class="hero-section">
-  <h1 class="hero-title">Real-Time Infrastructure Monitoring</h1>
-  <p class="hero-subtitle">
-    Monitor infrastructure performance, logs, and system activity with DevPulse.
-  </p>
-  <p class="cta-group">
-        <p class="cta-group">
-          <a href="#register" class="btn btn-primary">Deploy Free Cluster</a>
-          <a href="#features" class="btn btn-secondary">Read Documentation</a>
+      <section id="hero" class="intro-panel">
+        <span class="tag-chip">New: Real-time Telemetry Sync</span>
+        <h1 class="intro-heading">Primary Value Proposition</h1>
+        <p class="intro-blurb">Lead text describing DevPulse's core value to infrastructure teams.</p>
+        <p class="action-row">
+          <a href="#register" class="cta-btn cta-btn--filled">Deploy Free Cluster</a>
+          <a href="#features" class="cta-btn cta-btn--ghost">Read Documentation</a>
         </p>
       </section>
 
-      <!-- Feature section -->
-      <section id="features" class="section-container">
-        <header class="section-header">
-          <h2 class="section-title">Platform Capabilities</h2>
-          <p class="section-subtitle">Section subtitle describing DevPulse's engineering capabilities.</p>
+      <section id="features" class="content-block">
+        <header class="block-intro">
+          <h2 class="block-heading">Platform Capabilities</h2>
+          <p class="block-lede">Section subtitle describing DevPulse's engineering capabilities.</p>
         </header>
-        <article class="feature-card">
-          <h3 class="feature-title">Latency Tracking</h3>
-          <p class="feature-desc">Description of the Latency Tracking feature.</p>
+        <article class="capability-card capability-card--wide">
+          <h3 class="capability-name">Latency Tracking</h3>
+          <p class="capability-blurb">Description of the Latency Tracking feature.</p>
         </article>
-        <article class="feature-card">
-          <h3 class="feature-title">Log Aggregation</h3>
-          <p class="feature-desc">Description of the Log Aggregation feature.</p>
+        <article class="capability-card">
+          <h3 class="capability-name">Log Aggregation</h3>
+          <p class="capability-blurb">Description of the Log Aggregation feature.</p>
         </article>
-        <article class="feature-card">
-          <h3 class="feature-title">Auto-Remediation</h3>
-          <p class="feature-desc">Description of the Auto-Remediation feature.</p>
+        <article class="capability-card">
+          <h3 class="capability-name">Auto-Remediation</h3>
+          <p class="capability-blurb">Description of the Auto-Remediation feature.</p>
         </article>
       </section>
 
-      <!-- Pricing matrix section -->
-      <section id="pricing" class="section-container">
-        <header class="section-header">
-          <h2 class="section-title">Compute Tier Comparison</h2>
-          <p class="section-subtitle">Section subtitle describing the available compute tiers.</p>
+      <section id="pricing" class="content-block">
+        <header class="block-intro">
+          <h2 class="block-heading">Compute Tier Comparison</h2>
+          <p class="block-lede">Section subtitle describing the available compute tiers.</p>
         </header>
-        <article class="pricing-card">
-          <h3 class="tier-name">Developer</h3>
-          <p class="tier-desc">Tier description for the Developer plan.</p>
-          <p class="tier-price">
-            <span class="price-val">Free</span>
+        <article class="plan-card">
+          <h3 class="plan-name">Developer</h3>
+          <p class="plan-blurb">Plan description for the Developer tier.</p>
+          <p class="plan-cost">
+            <span class="plan-cost-num">Free</span>
           </p>
-          <ul class="tier-features">
+          <ul class="plan-perks">
             <li>Up to 10 nodes</li>
             <li>Standard log retention</li>
             <li>Community support</li>
           </ul>
-          <a href="#register" class="btn btn-outline btn-block">Select Plan</a>
+          <a href="#register" class="cta-btn cta-btn--outline cta-btn--full">Select Plan</a>
         </article>
-        <article class="pricing-card featured">
-          <strong class="popular-tag">Most Popular</strong>
-          <h3 class="tier-name">Pro Cluster</h3>
-          <p class="tier-desc">Tier description for the Pro Cluster plan.</p>
-          <p class="tier-price">
-            <span class="price-val">$99</span>
-            <span class="price-unit">/ month</span>
+        <article class="plan-card plan-card--highlighted">
+          <strong class="highlight-tag">Most Popular</strong>
+          <h3 class="plan-name">Pro Cluster</h3>
+          <p class="plan-blurb">Plan description for the Pro Cluster tier.</p>
+          <p class="plan-cost">
+            <span class="plan-cost-num">$99</span>
+            <span class="plan-cost-period">/ month</span>
           </p>
-          <ul class="tier-features">
+          <ul class="plan-perks">
             <li>Up to 200 nodes</li>
             <li>Extended log retention</li>
             <li>Priority support</li>
           </ul>
-          <a href="#register" class="btn btn-primary btn-block">Select Plan</a>
+          <a href="#register" class="cta-btn cta-btn--filled cta-btn--full">Select Plan</a>
         </article>
-        <article class="pricing-card">
-          <h3 class="tier-name">Enterprise Dedicated</h3>
-          <p class="tier-desc">Tier description for the Enterprise Dedicated plan.</p>
-          <p class="tier-price">
-            <span class="price-val">Custom</span>
+        <article class="plan-card">
+          <h3 class="plan-name">Enterprise Dedicated</h3>
+          <p class="plan-blurb">Plan description for the Enterprise Dedicated tier.</p>
+          <p class="plan-cost">
+            <span class="plan-cost-num">Custom</span>
           </p>
-          <ul class="tier-features">
+          <ul class="plan-perks">
             <li>Unlimited nodes</li>
             <li>Custom log retention</li>
             <li>Dedicated support engineer</li>
           </ul>
-          <a href="#register" class="btn btn-outline btn-block">Select Plan</a>
+          <a href="#register" class="cta-btn cta-btn--outline cta-btn--full">Select Plan</a>
         </article>
       </section>
 
-      <!-- registration/API sandbox section -->
-      <section id="register" class="section-container">
-        <header class="section-header">
-          <h2 class="section-title">Claim API Sandbox Keys</h2>
-          <p class="section-subtitle">Instant provisioning. No credit card required.</p>
+      <section id="register" class="content-block">
+        <header class="block-intro">
+          <h2 class="block-heading">Claim API Sandbox Keys</h2>
+          <p class="block-lede">Instant provisioning. No credit card required.</p>
         </header>
 
-        <form action="#" method="post" class="lead-form">
-          <p class="form-group">
-            <label for="email" class="form-label">Work Email <span class="required-mark">*</span></label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="abc@xyz.com" required />
+        <form action="#" method="post" class="signup-panel">
+          <p class="field-row">
+            <label for="email" class="field-label">Work Email <span class="field-required">*</span></label>
+            <input type="email" name="email" id="email" class="field-input" placeholder="abc@xyz.com" required />
           </p>
 
-          <p class="form-group">
-            <label for="node-count" class="form-label">Node Count</label>
-            <input type="number" name="node-count" id="node-count" class="form-control" min="1" max="1000" step="1" placeholder="10" />
-            <span class="input-hint">Min: 1 &mdash; Max: 1000</span>
+          <p class="field-row">
+            <label for="node-count" class="field-label">Node Count</label>
+            <input type="number" name="node-count" id="node-count" class="field-input" min="1" max="1000" step="1" placeholder="10" />
+            <span class="field-hint">Min: 1 &mdash; Max: 1000</span>
           </p>
 
-          <p class="form-group">
-            <label for="log-throughput" class="form-label">Log Throughput (events/sec)</label>
-            <input type="number" name="log-throughput" id="log-throughput" class="form-control" min="100" max="1000000" step="100" placeholder="1000" />
-            <span class="input-hint">Min: 100 &mdash; Max: 1,000,000</span>
+          <p class="field-row">
+            <label for="log-throughput" class="field-label">Log Throughput (events/sec)</label>
+            <input type="number" name="log-throughput" id="log-throughput" class="field-input" min="100" max="1000000" step="100" placeholder="1000" />
+            <span class="field-hint">Min: 100 &mdash; Max: 1,000,000</span>
           </p>
 
-          <!-- submit button -->
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Generate API Keys</button>
+          <button type="submit" class="cta-btn cta-btn--filled cta-btn--full cta-btn--large">Generate API Keys</button>
         </form>
       </section>
     </main>
 
-    <!-- Footer section -->
-    <footer class="site-footer">
-      <p class="footer-copy">&copy; 2026 DevPulse Inc. All rights reserved.</p>
-      <nav class="footer-links" aria-label="Footer Navigation Links">
+    <footer class="sitefoot">
+      <p class="foot-copy">&copy; 2026 DevPulse Inc. All rights reserved.</p>
+      <nav class="foot-links" aria-label="Footer Navigation Links">
         <a href="#hero">Back to Top</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
